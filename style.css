@@ -14,3 +14,11 @@
     transform: scale(1.05);
     transition-duration: .1s;
 }
+
+#cardCoverImage {
+    position: absolute;
+}
+
+#cardCoverImage:hover {
+    opacity: 0;
+}
