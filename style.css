@@ -19,6 +19,6 @@
     position: absolute;
 }
 
-#cardCoverImage:hover {
+.col:hover #cardCoverImage {
     opacity: 0;
 }
