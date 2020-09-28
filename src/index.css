@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.959);
+}
+.site-header a {
+  color: #727272;
+  transition: color .15s ease-in-out;
+}
+.site-header a svg:hover {
+  transform: scale(1.1);
+  transition-duration: .1s;
+}
+
+.btn-group a:hover{
+  transform: scale(1.05);
+  transition-duration: .1s;
+}
+
+#cardCoverImage {
+  position: absolute;
+}
+
+.col:hover #cardCoverImage {
+  opacity: 0;
+}
+
+.card-text + small {
+  height: 100%;
+  line-height: 30px;
+}
