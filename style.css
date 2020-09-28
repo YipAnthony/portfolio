@@ -1,0 +1,16 @@
+.site-header {
+    background-color: rgba(0, 0, 0, 0.959);
+}
+.site-header a {
+    color: #727272;
+    transition: color .15s ease-in-out;
+}
+.site-header a svg:hover {
+    transform: scale(1.1);
+    transition-duration: .1s;
+}
+
+.btn-group a:hover{
+    transform: scale(1.05);
+    transition-duration: .1s;
+}
