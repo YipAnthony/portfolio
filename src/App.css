@@ -61,13 +61,13 @@ code {
   transform: scale(1.03);
 }
 
-.card a, .container a {
+.card a, .container svg {
   color: inherit;
   z-index: 60;
   font-size: 16px;
 }
 
-.card a:hover, .container a:hover {
+.card a:hover, .container svg:hover {
   color: #356efd
 }
 
