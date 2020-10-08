@@ -35,7 +35,7 @@ export default function AboutMeResume() {
                         <div>
                             <h5 className="card-title">Programming Resume</h5>
                             <div className="embed-responsive embed-responsive-4by3">
-                                    <iframe className="embed-responsive-item" title="MedicalResume" src="./AnthonyYipResume.pdf"></iframe>
+                                    <iframe className="embed-responsive-item" title="MedicalResume" src="./images/AnthonyYipResume.pdf"></iframe>
                             </div>
                         </div>
                     </div>
