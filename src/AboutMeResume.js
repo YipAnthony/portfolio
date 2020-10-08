@@ -21,7 +21,7 @@ export default function AboutMeResume() {
         <div>
             <div className="container">
                 <div className="card text-center">
-                    <div className="card-header">
+                    {/* <div className="card-header">
                         <ul className="nav nav-pills card-header-pills mb-1">
                         <li className="nav-item">
                             <div className={programmingTab} aria-current="true" onClick={handleClick}>Programming</div>
@@ -30,9 +30,14 @@ export default function AboutMeResume() {
                             <div className={medicalTab}  aria-current="true"  onClick={handleClick}>Medical</div>
                         </li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className="card-body">
-                        <ResumeCurrentTab tab={programmingTab}/>
+                        <div>
+                            <h5 className="card-title">Programming Resume</h5>
+                            <div className="embed-responsive embed-responsive-4by3">
+                                    <iframe className="embed-responsive-item" title="MedicalResume" src="./images/AnthonyYipResume.pdf"></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
