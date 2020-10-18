@@ -12,6 +12,34 @@ export default function Projects() {
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div className="col">
                             <div className="card shadow-sm">
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/ai1.png" alt="AI Med Student image"/>
+                                <img className="bd-placeholder-img card-img-top" height="225" src="./images/aimedstudent.gif" alt="AI Med Student project animation"/>
+                                <div className="card-body">
+                                    <p className="card-text lead"><strong>AI Medical Student</strong>
+                                       
+                                    <small className="text-muted float-right">10/17/2020</small>
+                                    </p>
+                                    <p className="card-text">Clinical training tool for early medical students, allowing input of patient information to generate red flag symptoms to ask, additional clarification questions, and a differential diagnosis. Integrates React modules and the Infermedica API.</p>
+                                   
+                                    <p className="card-text"> Stack: 
+                                        <img className="card-text mb-2 ml-1" src="images/stack.png" alt="HTML, JS, CSS" width="70" height="25"/>
+                                        <img className="card-text mb-1 ml-1" src="images/react.png" alt="React" width="26" height="23"/>
+                                        <span className="card-text float-right">
+                                            <a className="d-md-inline-block" href="https://yipanthony.github.io/MedStudentAI/" target="_blank" rel="noopener noreferrer">
+                                            Website
+                                            </a>
+                                            <a className="d-md-inline-block ml-2" href="https://github.com/YipAnthony/MedStudentAI/" target="_blank" rel="noopener noreferrer">
+                                                GitHub
+                                            </a>
+                                        </span>
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                        <div className="col">
+                            <div className="card shadow-sm">
                                 <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/todo5.png" alt="Restaurant project animation"/>
                                 <img className="bd-placeholder-img card-img-top" height="225" src="./images/todo.gif" alt="To-do list project animation"/>
                                 <div className="card-body">
