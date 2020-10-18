@@ -12,7 +12,7 @@ export default function Projects() {
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div className="col">
                             <div className="card shadow-sm">
-                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/ai1.png" alt="AI Med Student image"/>
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/ai1.png" alt="AI Med Student"/>
                                 <img className="bd-placeholder-img card-img-top" height="225" src="./images/aimedstudent.gif" alt="AI Med Student project animation"/>
                                 <div className="card-body">
                                     <p className="card-text lead"><strong>AI Medical Student</strong>
@@ -37,6 +37,7 @@ export default function Projects() {
                                 </div>
                             </div>
                         </div>
+                    </div>
                     <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div className="col">
                             <div className="card shadow-sm">
