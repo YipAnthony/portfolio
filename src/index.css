@@ -41,3 +41,7 @@ code {
   height: 100%;
   line-height: 30px;
 }
+
+#navIcon:hover {
+  cursor: pointer;
+}

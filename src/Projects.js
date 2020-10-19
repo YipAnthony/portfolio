@@ -9,7 +9,8 @@ export default function Projects() {
             <div id="projectsContainer" className="album py-5 bg-light">
                 <div className="container">
 
-                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
+
                         <div className="col">
                             <div className="card shadow-sm">
                                 <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/ai1.png" alt="AI Med Student"/>
@@ -35,10 +36,8 @@ export default function Projects() {
                                     </p>
                                     
                                 </div>
-                            </div>
+                            </div>  
                         </div>
-                    </div>
-                    <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div className="col">
                             <div className="card shadow-sm">
                                 <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/todo5.png" alt="Restaurant project animation"/>
