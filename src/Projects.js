@@ -20,11 +20,11 @@ export default function Projects() {
                                        
                                     <small className="text-muted float-right">10/17/2020</small>
                                     </p>
-                                    <p className="card-text">Clinical training tool for early medical students, allowing input of patient information to generate red flag symptoms to ask, additional clarification questions, and a differential diagnosis. Integrates React modules and the Infermedica API.</p>
+                                    <p className="card-text">Clinical training tool for medical students, allowing input of patient information to generate red flag symptoms, clarification questions, and a working differential diagnosis. Integrates React modules and the Infermedica API.</p>
                                    
                                     <p className="card-text"> Stack: 
                                         <img className="card-text mb-2 ml-1" src="images/stack.png" alt="HTML, JS, CSS" width="70" height="25"/>
-                                        <img className="card-text mb-1 ml-1" src="images/react.png" alt="React" width="26" height="23"/>
+                                        <img className="card-text mb-1 ml-1" src="images/react.png" alt="React" width="24" height="23"/>
                                         <span className="card-text float-right">
                                             <a className="d-md-inline-block" href="https://yipanthony.github.io/MedStudentAI/" target="_blank" rel="noopener noreferrer">
                                             Website
