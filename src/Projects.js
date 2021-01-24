@@ -10,7 +10,35 @@ export default function Projects() {
                 <div className="container">
 
                     <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-3">
-
+                    
+                    <div className="col">
+                            <div className="card shadow-sm">
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/blog1.png" alt="Blog Image"/>
+                                <img className="bd-placeholder-img card-img-top" height="225" src="./images/blog.gif" alt="Blog animation"/>
+                                <div className="card-body">
+                                    <p className="card-text lead"><strong>Blogpage</strong>
+                                       
+                                    </p>
+                                    <p className="card-text">CRUD blog application. Built with MongoDB, Node.js (Express), and EJS templates for server-side rendered pages. Incorporated Passport.js for
+                                    user creation/authentication and TinyMCE as a rich text editor.</p>
+                                   
+                                    <p className="card-text"> Stack: 
+                                        <img className="card-text mb-2 ml-1" src="images/stack.png" alt="HTML, JS, CSS" width="70" height="25"/>
+                                        <img className="card-text mb-1 ml-1" src="images/node.png" alt="Node" width="24" height="23"/>
+                                        <img className="card-text mb-1 ml-1" src="images/mongodb.png" alt="Mongodb" width="24" height="23"/>
+                                        <span className="card-text float-right">
+                                            <a className="d-md-inline-block" href="https://generic-blogsite.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                            Website
+                                            </a>
+                                            <a className="d-md-inline-block ml-2" href="https://github.com/YipAnthony/blogServer" target="_blank" rel="noopener noreferrer">
+                                                GitHub
+                                            </a>
+                                        </span>
+                                    </p>
+                                    
+                                </div>
+                            </div>  
+                        </div>
                         <div className="col">
                             <div className="card shadow-sm">
                                 <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/ai1.png" alt="AI Med Student"/>
@@ -18,7 +46,6 @@ export default function Projects() {
                                 <div className="card-body">
                                     <p className="card-text lead"><strong>AI Medical Student</strong>
                                        
-                                    <small className="text-muted float-right">10/17/2020</small>
                                     </p>
                                     <p className="card-text">Clinical training tool for medical students, allowing input of patient information to generate red flag symptoms, clarification questions, and a working differential diagnosis. Integrates React modules and the Infermedica API.</p>
                                    
@@ -45,7 +72,6 @@ export default function Projects() {
                                 <div className="card-body">
                                     <p className="card-text lead"><strong>To-do List</strong>
                                        
-                                    <small className="text-muted float-right">9/20/2020</small>
                                     </p>
                                     <p className="card-text">Allows users to create tasks with due date, details, and grouping by projects. Side panel filters by daily/weekly tasks and project categories. Integrates user sign-up, authentication, and Firestore database.</p>
                                    
@@ -72,7 +98,6 @@ export default function Projects() {
                                 <div className="card-body">
                                     <p className="card-text lead">
                                         <strong>npm Login Module</strong>
-                                        <small className="text-muted float-right">9/19/2020</small>
                                     </p>
                                     <p className="card-text">Creates a user login/signup module. Signup form inplements client-side Javascript form validation with easily customizable password security options. </p>
                                     <p className="card-text">Stack:  
@@ -97,14 +122,13 @@ export default function Projects() {
                             </div>
                         </div>
 
-                        <div className="col">
+                        {/* <div className="col">
                             <div className="card shadow-sm">
                                 <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/rest3.png" alt="Restaurant project animation"/>
                                 <img id="restaurantCard" className="bd-placeholder-img card-img-top" height="225" src="./images/restaurant.gif" alt="Restaurant project animation"/>
                                 <div className="card-body">
                                     <p className="card-text lead">
                                         <strong>Restaurant Page</strong>
-                                        <small className="text-muted float-right">9/10/2020</small>
                                     </p>
                                     <p className="card-text">Mock restaurant page using only vanilla JS for element create and DOM manipulation</p>
                                     <p className="card-text">Stack:  
@@ -123,7 +147,7 @@ export default function Projects() {
                                 
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="col">
                             <div className="card shadow-sm">
@@ -132,7 +156,6 @@ export default function Projects() {
                                 <div className="card-body">
                                     <p className="card-text lead">
                                         <strong>Soundboard</strong>
-                                        <small className="text-muted float-right">9/1/2020</small>
                                     </p>
                                     <p className="card-text">Allows users to select from pre-loaded sounds, drag/drop onto a virtual numberpad, play and adjust speed/volume</p>
                                     <p className="card-text">Stack:  
