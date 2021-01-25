@@ -176,6 +176,33 @@ export default function Projects() {
                             </div>
                         </div>
 
+                        <div className="col">
+                            <div className="card shadow-sm">
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src="./images/rps1.png" alt="RPS game"/>
+                                <img className="bd-placeholder-img card-img-top" height="225" src="./images/rps1.png" alt="RPS game"/>
+                                <div className="card-body">
+                                    <p className="card-text lead">
+                                        <strong>Rock-Paper-Scissors Game</strong>
+                                    </p>
+                                    <p className="card-text">Basic Rock-paper-scissors game, practicing vanilla JS animations and DOM manipulation.</p>
+                                    <p className="card-text">Stack:  
+                                            <img className="card-text mb-2 ml-1" src="images/stack.png" alt="JS, CSS, HTML" width="70" height="25"/>
+                                            <span className="btn-group float-right">
+                                
+                                                <a className="d-md-inline-block" href="https://yipanthony.github.io/rockPaperScissors/" target="_blank" rel="noopener noreferrer">
+                                                    Website
+                                                </a>
+                                        
+                                                <a className="d-md-inline-block ml-2" href="https://github.com/YipAnthony/rockPaperScissors/" target="_blank" rel="noopener noreferrer">
+                                                    Github
+                                                </a>
+                                            </span>
+                                    </p>
+                                
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
