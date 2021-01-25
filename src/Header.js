@@ -13,7 +13,7 @@ export default function Header(props) {
             <div className="position-relative overflow-hidden p-2 p-md-2 m-md-2 text-center bg-light">
                 <div className="col-md-5 p-lg-3 mx-auto my-5">
                 <h1 className="display-4 font-weight-normal">Anthony Yip</h1>
-                <p className="lead font-weight-normal">M.D. candidate turned software engineer...</p>
+                <p className="lead font-weight-normal">M.D. candidate/Fullstack developer</p>
                 <div className="btn btn-outline-secondary m-1" onClick={props.handleTabClick} >Projects</div>
                 <div className="btn btn-outline-secondary m-1" onClick={props.handleTabClick}>About Me</div>
                 <div className="btn btn-outline-secondary m-1" onClick={props.handleTabClick}>Contact</div>
