@@ -35,7 +35,6 @@
 }
 
 .swiper-pagination {
-    position: relative;
     bottom: -5px !important;
     margin-top: 50px !important;
 }
