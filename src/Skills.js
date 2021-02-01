@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import "./Skills.css"
 import "./particle/particle.css"
 import particleAnimation from './particle/particle'

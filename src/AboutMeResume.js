@@ -1,21 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './AboutMeResume.css'
 
 export default function AboutMeResume() {
-    let [programmingTab, setProgrammingTab] = useState("nav-link active")
-    let [medicalTab, setMedicalTab] = useState("nav-link")
 
-    function handleClick(e){
-        let target = e.target.innerHTML;
-        if (target === "Programming"){
-            setProgrammingTab(()=> "nav-link active")
-            setMedicalTab(()=> "nav-link")
-        }
-        if (target === "Medical"){
-            setProgrammingTab(()=> "nav-link")
-            setMedicalTab(()=> "nav-link active")
-        }
-    }
 
     return (
         <> 

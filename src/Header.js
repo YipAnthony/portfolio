@@ -18,9 +18,6 @@ export default function Header(props) {
             skyRef.current, titleRef.current, mountainLeftRef.current, mountainRightRef.current, 
             hillRightRef.current, groundRef.current, arrowDownRef.current
         ]
-        // parallax()
-        console.log(translate, backgroundRef.current, arrowDownRef.current)
-        console.log(parallaxExec)
         parallaxExec(translate, backgroundRef.current, arrowDownRef.current)
     })
 
@@ -42,7 +39,7 @@ export default function Header(props) {
             </nav>
             <div className="parallaxBackground" ref={backgroundRef}>
                 <div className="filter"></div>
-                <img className="sky translate" ref={skyRef} src={process.env.PUBLIC_URL + "/images/paralax/small/sky.png"} data-speed="0"></img>
+                <img className="sky translate" ref={skyRef} src={process.env.PUBLIC_URL + "/images/paralax/small/sky.png"} alt="sky" data-speed="0"></img>
                 
                 <div className="mainTitle translate" ref={titleRef} data-speed=".3">
                     <div className="col-md-5 textContainer">
@@ -53,14 +50,14 @@ export default function Header(props) {
                     <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
                 </div>
 
-                <img className="mountainLeft translate" ref={mountainLeftRef} src={process.env.PUBLIC_URL + "/images/paralax/small/mountainLeft.png"} data-speed="-0.1"></img>
-                <img className="mountainRight translate" ref={mountainRightRef} src={process.env.PUBLIC_URL + "/images/paralax/small/mountainRight.png"} data-speed="-.05"></img>
-                <img className="hillRight translate" ref={hillRightRef} src={process.env.PUBLIC_URL + "/images/paralax/small/hillRight.png"} data-speed="-0.2"></img>
-                <img className="ground translate" ref={groundRef} src={process.env.PUBLIC_URL + "/images/paralax/small/ground.png"} data-speed="-0.2"></img>
+                <img className="mountainLeft translate" ref={mountainLeftRef} src={process.env.PUBLIC_URL + "/images/paralax/small/mountainLeft.png"} alt="mountains" data-speed="-0.1"></img>
+                <img className="mountainRight translate" ref={mountainRightRef} src={process.env.PUBLIC_URL + "/images/paralax/small/mountainRight.png"} alt="mountains" data-speed="-.05"></img>
+                <img className="hillRight translate" ref={hillRightRef} src={process.env.PUBLIC_URL + "/images/paralax/small/hillRight.png"} alt="hills" data-speed="-0.2"></img>
+                <img className="ground translate" ref={groundRef} src={process.env.PUBLIC_URL + "/images/paralax/small/ground.png"} alt="ground" data-speed="-0.2"></img>
 
                 <div className="shadow"> </div>
                 <a href="#projectID">
-                    <img className="arrowDown translate" ref={arrowDownRef} src={process.env.PUBLIC_URL + "/images/arrowDown.svg"} data-speed=".2"></img>
+                    <img className="arrowDown translate" ref={arrowDownRef} src={process.env.PUBLIC_URL + "/images/arrowDown.svg"} alt="down arrow" data-speed=".2"></img>
 
                 </a>
 
