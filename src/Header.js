@@ -1,16 +1,38 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import "./Header.css"
-import "./parallax"
+import parallaxExec from "./parallax.js"
 
 export default function Header(props) {
+
+    const skyRef = useRef();
+    const titleRef = useRef();
+    const mountainLeftRef = useRef();
+    const mountainRightRef = useRef();
+    const hillRightRef = useRef();
+    const groundRef = useRef();
+    const arrowDownRef = useRef();
+    const backgroundRef = useRef();
+
+    useEffect(() => {
+        let translate = [
+            skyRef.current, titleRef.current, mountainLeftRef.current, mountainRightRef.current, 
+            hillRightRef.current, groundRef.current, arrowDownRef.current
+        ]
+        // parallax()
+        console.log(translate, backgroundRef.current, arrowDownRef.current)
+        console.log(parallaxExec)
+        parallaxExec(translate, backgroundRef.current, arrowDownRef.current)
+    })
+
     return (
         <div>
+                       
             <nav className="site-header sticky-top py-1">
                 <div className="navSelections container d-flex flex-md-row justify-content-start">
                     <ul>
                         <li><a href="#projectID">Projects</a></li>
-                        <li><a href="#projectID">About Me</a></li>
-                        <li><a href="#projectID">Contact</a></li>
+                        <li><a href="#skillsContainer">Skills</a></li>
+                        <li><a href="#contactContainer">Contact</a></li>
                     </ul>
                 </div>
                 <div className="linkSelection container d-flex flex-md-row justify-content-end">
@@ -18,25 +40,27 @@ export default function Header(props) {
                     <svg id="navIcon" xmlns="http://www.w3.org/2000/svg" onClick={() => window.open("https://www.linkedin.com/in/anthony-yip/", "_blank")} width="25" height="25" className="navbar-nav-svg ml-2 " viewBox="0 0 24 24"><path fill="currentColor" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                 </div>
             </nav>
-            <div className="parallaxBackground">
+            <div className="parallaxBackground" ref={backgroundRef}>
                 <div className="filter"></div>
-                <img className="sky translate" src={process.env.PUBLIC_URL + "/images/paralax/sky.png"} data-speed="-0.1"></img>
-                <img className="mountainLeft translate" src={process.env.PUBLIC_URL + "/images/paralax/mountainLeft.png"} data-speed="0.1"></img>
-                <img className="mountainRight translate" src={process.env.PUBLIC_URL + "/images/paralax/mountainRight.png"} data-speed=".05"></img>
-                <img className="hillRight translate" src={process.env.PUBLIC_URL + "/images/paralax/hillRight.png"} data-speed="-0.1"></img>
-                <img className="ground translate" src={process.env.PUBLIC_URL + "/images/paralax/ground.png"} data-speed="-0.1"></img>
+                <img className="sky translate" ref={skyRef} src={process.env.PUBLIC_URL + "/images/paralax/small/sky.png"} data-speed="0"></img>
                 
-                <div className="mainTitle translate" data-speed="-.3">
+                <div className="mainTitle translate" ref={titleRef} data-speed=".3">
                     <div className="col-md-5 textContainer">
-                        <h1 className="display-1 font-weight-normal">Anthony Yip</h1>
-                        <p className="lead font-weight-normal">M.D. candidate/Fullstack developer</p>
+                        <h1 className="display-1">Anthony Yip</h1>
+                        <p className="lead">M.D. candidate/Fullstack developer</p>
                     </div>
                     <div className="product-device shadow-sm d-none d-md-block"></div>
                     <div className="product-device product-device-2 shadow-sm d-none d-md-block"></div>
                 </div>
+
+                <img className="mountainLeft translate" ref={mountainLeftRef} src={process.env.PUBLIC_URL + "/images/paralax/small/mountainLeft.png"} data-speed="-0.1"></img>
+                <img className="mountainRight translate" ref={mountainRightRef} src={process.env.PUBLIC_URL + "/images/paralax/small/mountainRight.png"} data-speed="-.05"></img>
+                <img className="hillRight translate" ref={hillRightRef} src={process.env.PUBLIC_URL + "/images/paralax/small/hillRight.png"} data-speed="-0.2"></img>
+                <img className="ground translate" ref={groundRef} src={process.env.PUBLIC_URL + "/images/paralax/small/ground.png"} data-speed="-0.2"></img>
+
                 <div className="shadow"> </div>
                 <a href="#projectID">
-                    <img className="arrowDown translate" src={process.env.PUBLIC_URL + "/images/arrowDown.svg"} data-speed="-1"></img>
+                    <img className="arrowDown translate" ref={arrowDownRef} src={process.env.PUBLIC_URL + "/images/arrowDown.svg"} data-speed=".2"></img>
 
                 </a>
 

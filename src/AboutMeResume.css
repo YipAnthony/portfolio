@@ -1,0 +1,28 @@
+.resumeContainer {
+    width: 70%;
+    margin: auto;
+}
+
+.resumePDFFormat {
+    width: 100%;
+    height: 50vw;
+}
+
+.accordion-button {
+    color: white;
+    background-color:#e2e2e227 ;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #e7f1ff46;
+}
+
+.accordion-button:not(.collapsed)::after, .accordion-button::after {
+    /* filter: invert(100%) sepia(10%) saturate(7500%) hue-rotate(294deg) brightness(116%) contrast(117%); */
+    filter: brightness(0) invert(1);
+}
+
+.accordion-button:focus {
+    border-color: #e7f1ff46 !important;
+}

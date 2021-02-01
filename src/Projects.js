@@ -1,14 +1,21 @@
 import React from 'react'
 
+import "./Project.css"
+
 // Import Swiper React components
+import SwiperCore, {Navigation, Pagination, EffectCoverflow} from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 
-// Import Swiper styles
+//import swiper styles
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
+import 'swiper/components/effect-coverflow/effect-coverflow.scss';
+
+// install Swiper components
+SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
 export default function Projects() {
-
-    
 
     return (
         <div id="projectID" className="projectsBody">
@@ -16,14 +23,33 @@ export default function Projects() {
             <div className="caroselContainer">
                 <Swiper
                     spaceBetween={50}
-                    slidesPerView={3}
-                    onSlideChange={() => console.log('slide change')}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    slidesPerView={2}
+                    initialSlide={2}
+                    centeredSlides={true}
+                    grabCursor={true}
+                    breakpoints={
+                        {
+                            1400: {
+                                slidesPerView: 3
+                            },
+                            1000: {
+                                slidesPerView: 2,
+                                spaceBetween: 20
+                            },
+                            0: {
+                                spaceBetween: 10
+                            }
+                        }
+                    }
+                    navigation
+                    pagination
+                    effect="coverflow"
                     >
+                <div className="caroselFilter"></div>
                     <SwiperSlide>
                     <div className="card shadow-sm">
-                                    <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/blog1.png"} alt="Blog Image"/>
-                                    <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/blog.gif"} alt="Blog animation"/>
+                                    {/* <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/blog1.png"} alt="Blog Image"/> */}
+                                    <img className="bd-placeholder-img card-img-top blogImage" src={process.env.PUBLIC_URL + "/images/blog.gif"} alt="Blog animation"/>
                                     <div className="card-body">
                                         <p className="card-text lead"><strong>Blogpage</strong>
                                         
@@ -49,9 +75,12 @@ export default function Projects() {
                                 </div> 
                     </SwiperSlide>
                     <SwiperSlide>
+                    
                     <div className="card shadow-sm">
-                                    <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/ai1.png"} alt="AI Med Student"/>
-                                    <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/aimedstudent.gif"} alt="AI Med Student project animation"/>
+                                                     
+                                    {/* <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/ai1.png"} alt="AI Med Student"/> */}
+                                    
+                                    <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/aimedstudent.gif"} alt="AI Med Student project animation"/>
                                     <div className="card-body">
                                         <p className="card-text lead"><strong>AI Medical Student</strong>
                                         
@@ -76,8 +105,8 @@ export default function Projects() {
                     </SwiperSlide>
                     <SwiperSlide>
                     <div className="card shadow-sm">
-                                    <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/todo5.png"} alt="Restaurant project animation"/>
-                                    <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/todo.gif"} alt="To-do list project animation"/>
+                                    {/* <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/todo5.png"} alt="Restaurant project animation"/> */}
+                                    <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/todo.gif"} alt="To-do list project animation"/>
                                     <div className="card-body">
                                         <p className="card-text lead"><strong>To-do List</strong>
                                         
@@ -102,8 +131,8 @@ export default function Projects() {
                     </SwiperSlide>
                     <SwiperSlide>
                     <div className="card shadow-sm">
-                                    <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/sb3.png"} alt="Restaurant project animation"/>
-                                    <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/sb.gif"} alt="Soundboard project animation"/>
+                                    {/* <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/sb3.png"} alt="Restaurant project animation"/> */}
+                                    <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/sb.gif"} alt="Soundboard project animation"/>
                                     <div className="card-body">
                                         <p className="card-text lead">
                                             <strong>Soundboard</strong>
@@ -128,8 +157,8 @@ export default function Projects() {
                     </SwiperSlide>
                     <SwiperSlide>
                     <div className="card shadow-sm">
-                                    <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/rps1.png"} alt="RPS game"/>
-                                    <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/rps1.png"} alt="RPS game"/>
+                                    {/* <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/rps1.png"} alt="RPS game"/> */}
+                                    <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/rps1.png"} alt="RPS game"/>
                                     <div className="card-body">
                                         <p className="card-text lead">
                                             <strong>Rock-Paper-Scissors Game</strong>
@@ -163,8 +192,8 @@ export default function Projects() {
                     
                     <div className="col">
                             <div className="card shadow-sm">
-                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/blog1.png"} alt="Blog Image"/>
-                                <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/blog.gif"} alt="Blog animation"/>
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/blog1.png"} alt="Blog Image"/>
+                                <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/blog.gif"} alt="Blog animation"/>
                                 <div className="card-body">
                                     <p className="card-text lead"><strong>Blogpage</strong>
                                        
@@ -191,8 +220,8 @@ export default function Projects() {
                         </div>
                         <div className="col">
                             <div className="card shadow-sm">
-                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/ai1.png"} alt="AI Med Student"/>
-                                <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/aimedstudent.gif"} alt="AI Med Student project animation"/>
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/ai1.png"} alt="AI Med Student"/>
+                                <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/aimedstudent.gif"} alt="AI Med Student project animation"/>
                                 <div className="card-body">
                                     <p className="card-text lead"><strong>AI Medical Student</strong>
                                        
@@ -217,8 +246,8 @@ export default function Projects() {
                         </div>
                         <div className="col">
                             <div className="card shadow-sm">
-                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/todo5.png"} alt="Restaurant project animation"/>
-                                <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/todo.gif"} alt="To-do list project animation"/>
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/todo5.png"} alt="Restaurant project animation"/>
+                                <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/todo.gif"} alt="To-do list project animation"/>
                                 <div className="card-body">
                                     <p className="card-text lead"><strong>To-do List</strong>
                                        
@@ -243,8 +272,8 @@ export default function Projects() {
                         </div>
                         <div className="col">
                             <div className="card shadow-sm">
-                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/login1.png"} alt="Restaurant project animation"/>
-                                <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/loginmodule.gif"} alt="Login module project animation"/>
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/login1.png"} alt="Restaurant project animation"/>
+                                <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/loginmodule.gif"} alt="Login module project animation"/>
                                 <div className="card-body">
                                     <p className="card-text lead">
                                         <strong>npm Login Module</strong>
@@ -274,8 +303,8 @@ export default function Projects() {
 
                         <div className="col">
                             <div className="card shadow-sm">
-                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/rest3.png" alt="Restaurant project animation"/>
-                                <img id="restaurantCard" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/restaurant.gif" alt="Restaurant project animation"/>
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/rest3.png" alt="Restaurant project animation"/>
+                                <img id="restaurantCard" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/restaurant.gif" alt="Restaurant project animation"/>
                                 <div className="card-body">
                                     <p className="card-text lead">
                                         <strong>Restaurant Page</strong>
@@ -301,8 +330,8 @@ export default function Projects() {
 
                         <div className="col">
                             <div className="card shadow-sm">
-                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/sb3.png"} alt="Restaurant project animation"/>
-                                <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/sb.gif"} alt="Soundboard project animation"/>
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/sb3.png"} alt="Restaurant project animation"/>
+                                <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/sb.gif"} alt="Soundboard project animation"/>
                                 <div className="card-body">
                                     <p className="card-text lead">
                                         <strong>Soundboard</strong>
@@ -328,8 +357,8 @@ export default function Projects() {
 
                         <div className="col">
                             <div className="card shadow-sm">
-                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/rps1.png"} alt="RPS game"/>
-                                <img className="bd-placeholder-img card-img-top" height="225" src={process.env.PUBLIC_URL + "/images/rps1.png"} alt="RPS game"/>
+                                <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/rps1.png"} alt="RPS game"/>
+                                <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/rps1.png"} alt="RPS game"/>
                                 <div className="card-body">
                                     <p className="card-text lead">
                                         <strong>Rock-Paper-Scissors Game</strong>

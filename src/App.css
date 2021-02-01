@@ -9,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #151515
 }
 
 body::-webkit-scrollbar {
@@ -32,7 +33,7 @@ body::-webkit-scrollbar-thumb {
 
 .projectContainerTitle {
   text-align: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.801);
 }
 
 code {
@@ -101,8 +102,8 @@ code {
   position: absolute;
 }
 
-.col:hover #cardCoverImage {
-  opacity: 0;
+.col:hover #cardCoverImage:hover {
+  opacity: 0 !important;
 }
 
 .card-text + small {

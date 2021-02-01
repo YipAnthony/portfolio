@@ -1,0 +1,9 @@
+.canvasContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#canvas1 {
+    position: relative;
+}
+

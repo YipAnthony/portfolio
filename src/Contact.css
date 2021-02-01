@@ -1,0 +1,31 @@
+#contactContainer {
+ margin-top: 50px;
+}
+
+.contactContainer svg {
+    margin: 10px;
+}
+
+.emailContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.emailContainer p:hover {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.contactEmail {
+    color: #6c757d; 
+}
+
+.githubIcon:hover, .linkedInIcon:hover {
+    cursor: pointer !important;
+}
+
+.alert {
+    width: 100px !important;
+    margin: auto;
+}

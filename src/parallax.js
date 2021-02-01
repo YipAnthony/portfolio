@@ -1,26 +1,17 @@
-let translate = [];
-let title;
-let parallaxContainer;
-let parallaxContainerHeight;
-let arrowDown;
-setTimeout(() => {
-    translate = document.querySelectorAll('.translate');
-    title = document.querySelector('.mainTitle');
-    parallaxContainer = document.querySelector('.parallaxBackground')
-    arrowDown = document.querySelector('.arrowDown')
+export default function parallaxExec (translate, parallaxContainer, arrowDown) {
 
-    parallaxContainerHeight = parallaxContainer.offsetHeight;
-}, 1000)
+    const parallaxContainerHeight = parallaxContainer.offsetHeight;
 
-window.addEventListener('scroll', () => {
-    let scroll = window.pageYOffset;
+    window.addEventListener('scroll', () => {
+        let scroll = window.pageYOffset;
+        
+        translate.forEach( element => {
+            let speed = element.dataset.speed;
+            element.style.transform = `translateY(${scroll * speed}px)`
+        })
     
-    if (!title || !translate || !parallaxContainer || !parallaxContainerHeight || !arrowDown) return
-    translate.forEach( element => {
-        let speed = element.dataset.speed;
-        element.style.transform = `translateY(${scroll * speed}px)`
+        // title.style.opacity = - scroll/(parallaxContainerHeight / 2) + 1;   
+        arrowDown.style.opacity = - scroll/(parallaxContainerHeight / 2) + 1;   
     })
 
-    title.style.opacity = - scroll/(parallaxContainerHeight / 2) + 1;   
-    arrowDown.style.opacity = - scroll/(parallaxContainerHeight / 2) + 1;   
-})
+}
