@@ -36,7 +36,7 @@ export default function particleAnimation (canvas, group) {
                 canvas.height = 0.18 * window.innerWidth
             } 
         }
-        let onCanvas = false
+        let onCanvas = true
         if (group === "title") {
             onCanvas = true
         }
@@ -196,10 +196,10 @@ export default function particleAnimation (canvas, group) {
                         }
                     }
                 } else {
-                    if (!onCanvas) {
-                        this.x -= directionX;
-                        this.y -= directionY;
-                    }
+                    // if (!onCanvas) {
+                    //     this.x -= directionX;
+                    //     this.y -= directionY;
+                    // }
                     if (distance < mouse.radius) {
                         this.x -= directionX;
                         this.y -= directionY;

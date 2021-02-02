@@ -61,17 +61,17 @@ export default function Projects() {
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                             <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/node.png"} alt="Node" width="24" height="23"/>
                                             <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/mongodb.png"} alt="Mongodb" width="24" height="23"/>
-                                            <span className="card-text float-right">
-                                                <a className="d-md-inline-block" href="https://generic-blogsite.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                                                Website
-                                                </a>
-                                                <a className="d-md-inline-block ml-2" href="https://github.com/YipAnthony/blogServer" target="_blank" rel="noopener noreferrer">
-                                                    GitHub
-                                                </a>
-                                            </span>
+                                    
                                         </p>
-                                        
                                     </div>
+                                        <div className="buttonRow">
+                                            <a className="demoButton" href="https://generic-blogsite.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                                                <button className="demoButton btn btn-primary shadow-none">Demo</button>
+                                            </a>
+                                            <a className="codeButton" href="https://github.com/YipAnthony/blogServer" target="_blank" rel="noopener noreferrer">
+                                                <button className="codeButton btn btn-secondary shadow-none">Code</button>
+                                            </a>
+                                        </div>
                                 </div> 
                     </SwiperSlide>
                     <SwiperSlide>
@@ -90,16 +90,15 @@ export default function Projects() {
                                         <p className="card-text"> Stack: 
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                             <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/react.png"} alt="React" width="24" height="23"/>
-                                            <span className="card-text float-right">
-                                                <a className="d-md-inline-block" href="https://yipanthony.github.io/MedStudentAI/" target="_blank" rel="noopener noreferrer">
-                                                Website
-                                                </a>
-                                                <a className="d-md-inline-block ml-2" href="https://github.com/YipAnthony/MedStudentAI/" target="_blank" rel="noopener noreferrer">
-                                                    GitHub
-                                                </a>
-                                            </span>
                                         </p>
-                                        
+                                    </div>
+                                    <div className="buttonRow">
+                                        <a className="demoButton" href="https://yipanthony.github.io/MedStudentAI/" target="_blank" rel="noopener noreferrer">
+                                            <button className="demoButton btn btn-primary shadow-none">Demo</button>
+                                        </a>
+                                        <a className="codeButton" href="https://github.com/YipAnthony/MedStudentAI/" target="_blank" rel="noopener noreferrer">
+                                            <button className="codeButton btn btn-secondary shadow-none">Code</button>
+                                        </a>
                                     </div>
                                 </div>  
                     </SwiperSlide>
@@ -116,16 +115,16 @@ export default function Projects() {
                                         <p className="card-text"> Stack: 
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                             <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/firebase.svg"} alt="Firebase" width="26" height="23"/>
-                                            <span className="card-text float-right">
-                                                <a className="d-md-inline-block" href="https://yipanthony.github.io/betterToDoList/" target="_blank" rel="noopener noreferrer">
-                                                Website
-                                                </a>
-                                                <a className="d-md-inline-block ml-2" href="https://github.com/YipAnthony/betterToDoList" target="_blank" rel="noopener noreferrer">
-                                                    GitHub
-                                                </a>
-                                            </span>
                                         </p>
                                         
+                                    </div>
+                                    <div className="buttonRow">
+                                        <a className="demoButton" href="https://yipanthony.github.io/betterToDoList/" target="_blank" rel="noopener noreferrer">
+                                            <button className="demoButton btn btn-primary shadow-none">Demo</button>
+                                        </a>
+                                        <a className="codeButton" href="https://github.com/YipAnthony/betterToDoList" target="_blank" rel="noopener noreferrer">
+                                            <button className="codeButton btn btn-secondary shadow-none">Code</button>
+                                        </a>
                                     </div>
                                 </div>
                     </SwiperSlide>
@@ -140,18 +139,16 @@ export default function Projects() {
                                         <p className="card-text">Allows users to select from pre-loaded sounds, drag/drop onto a virtual numberpad, play and adjust speed/volume</p>
                                         <p className="card-text">Stack:  
                                                 <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="JS, CSS, HTML" width="70" height="25"/>
-                                                <span className="btn-group float-right">
-                                    
-                                                    <a className="d-md-inline-block" href="https://yipanthony.github.io/soundboard/" target="_blank" rel="noopener noreferrer">
-                                                        Website
-                                                    </a>
-                                            
-                                                    <a className="d-md-inline-block ml-2" href="https://github.com/YipAnthony/soundboard" target="_blank" rel="noopener noreferrer">
-                                                        Github
-                                                    </a>
-                                                </span>
                                         </p>
                                     
+                                    </div>
+                                    <div className="buttonRow">
+                                        <a className="demoButton" href="https://yipanthony.github.io/soundboard/" target="_blank" rel="noopener noreferrer">
+                                            <button className="demoButton btn btn-primary shadow-none">Demo</button>
+                                        </a>
+                                        <a className="codeButton" href="https://github.com/YipAnthony/soundboard" target="_blank" rel="noopener noreferrer">
+                                            <button className="codeButton btn btn-secondary shadow-none">Code</button>
+                                        </a>
                                     </div>
                                 </div>
                     </SwiperSlide>
@@ -166,18 +163,16 @@ export default function Projects() {
                                         <p className="card-text">Basic Rock-paper-scissors game, practicing vanilla JS animations and DOM manipulation.</p>
                                         <p className="card-text">Stack:  
                                                 <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="JS, CSS, HTML" width="70" height="25"/>
-                                                <span className="btn-group float-right">
-                                    
-                                                    <a className="d-md-inline-block" href="https://yipanthony.github.io/rockPaperScissors/" target="_blank" rel="noopener noreferrer">
-                                                        Website
-                                                    </a>
-                                            
-                                                    <a className="d-md-inline-block ml-2" href="https://github.com/YipAnthony/rockPaperScissors/" target="_blank" rel="noopener noreferrer">
-                                                        Github
-                                                    </a>
-                                                </span>
                                         </p>
                                     
+                                    </div>
+                                    <div className="buttonRow">
+                                        <a className="demoButton" href="https://yipanthony.github.io/rockPaperScissors/" target="_blank" rel="noopener noreferrer">
+                                            <button className="demoButton btn btn-primary shadow-none">Demo</button>
+                                        </a>
+                                        <a className="codeButton" href="https://github.com/YipAnthony/rockPaperScissors/" target="_blank" rel="noopener noreferrer">
+                                            <button className="codeButton btn btn-secondary shadow-none">Code</button>
+                                        </a>
                                     </div>
                                 </div>
                     </SwiperSlide>

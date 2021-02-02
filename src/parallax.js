@@ -10,7 +10,6 @@ export default function parallaxExec (translate, parallaxContainer, arrowDown) {
             element.style.transform = `translateY(${scroll * speed}px)`
         })
     
-        // title.style.opacity = - scroll/(parallaxContainerHeight / 2) + 1;   
         arrowDown.style.opacity = - scroll/(parallaxContainerHeight / 2) + 1;   
     })
 

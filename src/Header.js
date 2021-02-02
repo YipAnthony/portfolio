@@ -56,7 +56,7 @@ export default function Header(props) {
                 <img className="ground translate" ref={groundRef} src={process.env.PUBLIC_URL + "/images/paralax/small/ground.png"} alt="ground" data-speed="-0.2"></img>
 
                 <div className="shadow"> </div>
-                <a href="#projectID">
+                <a className="arrowDownPosition" href="#projectID">
                     <img className="arrowDown translate" ref={arrowDownRef} src={process.env.PUBLIC_URL + "/images/arrowDown.svg"} alt="down arrow" data-speed=".2"></img>
 
                 </a>

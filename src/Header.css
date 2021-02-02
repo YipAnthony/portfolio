@@ -128,15 +128,78 @@
     height: 50%;
     width: 100%;
     left: 0;
-    z-index: 25;
+    z-index: 26;
     background: linear-gradient(to top, #151515, transparent)
 }
+
+
+
+
+
 
 @media (max-width: 500px) {
     .textContainer p{
         font-size: 10px;
     }
 }
+
+
+@media (max-width: 1000px) {
+    .parallaxBackground {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .sky {
+        height: 200vh;
+        width: auto;
+        left: -170%;
+    }
+    
+    .ground {
+        bottom: -20%;
+        height: 100vh;
+        width: auto;
+    }
+
+    .mountainLeft {
+        bottom: -30%;
+        left: -25%;
+        height: 100vh;
+        width: auto;
+    }
+    
+    .textContainer {
+        top: 25% !important;
+    }
+    
+    .textContainer h1 {
+        font-size: 3rem;
+    }
+
+    .textContainer p {
+        font-size: 1rem;
+    }
+    
+    
+    .arrowDown {
+        position: absolute;
+        bottom: 50%;
+        width: 20vw;   
+    }
+
+    .arrowDownPosition {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 30%;
+    }
+    
+    .arrowDown:hover {
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 1200px) {
     .textContainer {
         top: 20%;

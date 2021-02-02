@@ -3,7 +3,58 @@
     justify-content: center;
 }
 
+.skillsText {
+    text-align: center;
+    color: #6c757d
+}
+
 #canvas1 {
     position: relative;
 }
 
+.arrow1 {
+    width: 100px;
+    transform: rotate(-90deg) scaleX(-1);
+    filter: invert(47%) sepia(2%) saturate(2242%) hue-rotate(167deg) brightness(95%) contrast(82%);
+    position: absolute;
+    left: -100px;
+}
+.arrow2 {
+    width: 100px;
+    transform: rotate(90deg) scaleX(-1);
+    filter: invert(47%) sepia(2%) saturate(2242%) hue-rotate(167deg) brightness(95%) contrast(82%);
+    position: absolute;
+    top: -70px;
+    right: -100px;
+}
+
+.interactableText {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+@media (max-width: 1000px) {
+    .arrow1 {
+        width: 30px;
+        position: absolute;
+        left: -30px;
+        bottom: -12px;
+    }
+    .arrow2 {
+        width: 30px;
+        transform: rotate(90deg) scaleX(-1);
+        filter: invert(47%) sepia(2%) saturate(2242%) hue-rotate(167deg) brightness(95%) contrast(82%);
+        position: absolute;
+        top: -15px;
+        right: -30px;
+    }
+    
+    .interactableText {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+}

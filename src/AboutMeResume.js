@@ -9,9 +9,12 @@ export default function AboutMeResume() {
         <> 
         <div className="resumeContainer">
             {isMobile ? 
-                <a className="resumeDownload"  href={process.env.PUBLIC_URL + "/images/AnthonyYipResume.pdf"} download>
-                    <button className="btn btn-secondary">Resume</button>
-                </a>
+                <div className="resumeButtonContainer">
+                    <a className="resumeDownload"  href={process.env.PUBLIC_URL + "/images/AnthonyYipResume.pdf"} download>
+                        <button className="btn btn-secondary">Resume</button>
+                    </a>
+
+                </div>
             :
 
                 <div className="accordion" id="accordionExample">
