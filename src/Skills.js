@@ -29,18 +29,6 @@ export default function Skills() {
                 <div id="canvasContainer" className="canvasContainer" >
                     <canvas id="canvasTitle" ref={canvasTitleRef}></canvas>
                 </div>
-                
-                <div className="interactableText">
-                    <div className="arrow1">
-                        <img src={process.env.PUBLIC_URL + "/images/arrow.svg"} alt="arrow"></img>
-                    </div>
-                    <h5 className="skillsText">(Interactable!)</h5>
-                    <div className="arrow2">
-                        <img src={process.env.PUBLIC_URL + "/images/arrow.svg"} alt="arrow"></img>
-                    </div>
-                
-                </div> 
-
                 <div className="canvasContainer" >
                     <canvas id="canvas1" ref={canvasRef}></canvas>
                 </div>
