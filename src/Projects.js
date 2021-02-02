@@ -57,7 +57,7 @@ export default function Projects() {
                                         <p className="card-text">CRUD blog application. Built with MongoDB, Node.js (Express), and EJS templates for server-side rendered pages. Incorporated Passport.js for
                                         user creation/authentication and TinyMCE as a rich text editor.</p>
                                     
-                                        <p className="card-text"> Stack: 
+                                        <p className="card-text"> 
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                             <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/node.png"} alt="Node" width="24" height="23"/>
                                             <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/mongodb.png"} alt="Mongodb" width="24" height="23"/>
@@ -74,6 +74,38 @@ export default function Projects() {
                                         </div>
                                 </div> 
                     </SwiperSlide>
+
+                    <SwiperSlide>
+                    
+                    <div className="card shadow-sm">
+                                                     
+                                    {/* <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/ai1.png"} alt="AI Med Student"/> */}
+                                    
+                                    <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/apartment.gif"} alt="Apartment project animation"/>
+                                    <div className="card-body">
+                                        <p className="card-text lead"><strong>SF Apartment Finder</strong>
+                                        
+                                        </p>
+                                        <p className="card-text">Allows users to browse apartment listings in San Francisco. Incorporates the Google address search API as well as other query parameters (zicode radius, price, size, etc). </p>
+                                    
+                                        <p className="card-text">  
+                                            <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
+                                            <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/react.png"} alt="React" width="24" height="23"/>
+                                            <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/node.png"} alt="Node" width="24" height="23"/>
+                                            <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/mongodb.png"} alt="Mongodb" width="24" height="23"/>
+                                        </p>
+                                    </div>
+                                    <div className="buttonRow">
+                                        <a className="demoButton" href="https://yipanthony.github.io/symptoFrontEnd/" target="_blank" rel="noopener noreferrer">
+                                            <button className="demoButton btn btn-primary shadow-none">Demo</button>
+                                        </a>
+                                        <a className="codeButton" href="https://github.com/YipAnthony/symptoStreet" target="_blank" rel="noopener noreferrer">
+                                            <button className="codeButton btn btn-secondary shadow-none">Code</button>
+                                        </a>
+                                    </div>
+                                </div>  
+                    </SwiperSlide>
+
                     <SwiperSlide>
                     
                     <div className="card shadow-sm">
@@ -87,7 +119,7 @@ export default function Projects() {
                                         </p>
                                         <p className="card-text">Clinical training tool for medical students, allowing input of patient information to generate red flag symptoms, clarification questions, and a working differential diagnosis. Integrates React modules and the Infermedica API.</p>
                                     
-                                        <p className="card-text"> Stack: 
+                                        <p className="card-text">  
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                             <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/react.png"} alt="React" width="24" height="23"/>
                                         </p>
@@ -112,7 +144,7 @@ export default function Projects() {
                                         </p>
                                         <p className="card-text">Allows users to create tasks with due date, details, and grouping by projects. Side panel filters by daily/weekly tasks and project categories. Integrates user sign-up, authentication, and Firestore database.</p>
                                     
-                                        <p className="card-text"> Stack: 
+                                        <p className="card-text">  
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                             <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/firebase.svg"} alt="Firebase" width="26" height="23"/>
                                         </p>
@@ -137,7 +169,7 @@ export default function Projects() {
                                             <strong>Soundboard</strong>
                                         </p>
                                         <p className="card-text">Allows users to select from pre-loaded sounds, drag/drop onto a virtual numberpad, play and adjust speed/volume</p>
-                                        <p className="card-text">Stack:  
+                                        <p className="card-text">  
                                                 <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="JS, CSS, HTML" width="70" height="25"/>
                                         </p>
                                     
@@ -161,7 +193,7 @@ export default function Projects() {
                                             <strong>Rock-Paper-Scissors Game</strong>
                                         </p>
                                         <p className="card-text">Basic Rock-paper-scissors game, practicing vanilla JS animations and DOM manipulation.</p>
-                                        <p className="card-text">Stack:  
+                                        <p className="card-text">  
                                                 <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="JS, CSS, HTML" width="70" height="25"/>
                                         </p>
                                     
@@ -196,7 +228,7 @@ export default function Projects() {
                                     <p className="card-text">CRUD blog application. Built with MongoDB, Node.js (Express), and EJS templates for server-side rendered pages. Incorporated Passport.js for
                                     user creation/authentication and TinyMCE as a rich text editor.</p>
                                    
-                                    <p className="card-text"> Stack: 
+                                    <p className="card-text">  
                                         <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                         <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/node.png"} alt="Node" width="24" height="23"/>
                                         <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/mongodb.png"} alt="Mongodb" width="24" height="23"/>
@@ -223,7 +255,7 @@ export default function Projects() {
                                     </p>
                                     <p className="card-text">Clinical training tool for medical students, allowing input of patient information to generate red flag symptoms, clarification questions, and a working differential diagnosis. Integrates React modules and the Infermedica API.</p>
                                    
-                                    <p className="card-text"> Stack: 
+                                    <p className="card-text">  
                                         <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                         <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/react.png"} alt="React" width="24" height="23"/>
                                         <span className="card-text float-right">
@@ -249,7 +281,7 @@ export default function Projects() {
                                     </p>
                                     <p className="card-text">Allows users to create tasks with due date, details, and grouping by projects. Side panel filters by daily/weekly tasks and project categories. Integrates user sign-up, authentication, and Firestore database.</p>
                                    
-                                    <p className="card-text"> Stack: 
+                                    <p className="card-text">  
                                         <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="HTML, JS, CSS" width="70" height="25"/>
                                         <img className="card-text mb-1 ml-1" src={process.env.PUBLIC_URL + "/images/firebase.svg"} alt="Firebase" width="26" height="23"/>
                                         <span className="card-text float-right">
@@ -274,7 +306,7 @@ export default function Projects() {
                                         <strong>npm Login Module</strong>
                                     </p>
                                     <p className="card-text">Creates a user login/signup module. Signup form inplements client-side Javascript form validation with easily customizable password security options. </p>
-                                    <p className="card-text">Stack:  
+                                    <p className="card-text">  
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="JS, CSS, HTML" width="70" height="25"/>
                                             <span className="btn-group float-right">
                                 
@@ -305,7 +337,7 @@ export default function Projects() {
                                         <strong>Restaurant Page</strong>
                                     </p>
                                     <p className="card-text">Mock restaurant page using only vanilla JS for element create and DOM manipulation</p>
-                                    <p className="card-text">Stack:  
+                                    <p className="card-text">  
                                         <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "//stack.png" alt="JS, CSS, HTML" width="70" height="25"/>
                                         <span className="btn-group float-right">
                                             
@@ -332,7 +364,7 @@ export default function Projects() {
                                         <strong>Soundboard</strong>
                                     </p>
                                     <p className="card-text">Allows users to select from pre-loaded sounds, drag/drop onto a virtual numberpad, play and adjust speed/volume</p>
-                                    <p className="card-text">Stack:  
+                                    <p className="card-text">  
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="JS, CSS, HTML" width="70" height="25"/>
                                             <span className="btn-group float-right">
                                 
@@ -359,7 +391,7 @@ export default function Projects() {
                                         <strong>Rock-Paper-Scissors Game</strong>
                                     </p>
                                     <p className="card-text">Basic Rock-paper-scissors game, practicing vanilla JS animations and DOM manipulation.</p>
-                                    <p className="card-text">Stack:  
+                                    <p className="card-text">  
                                             <img className="card-text mb-2 ml-1" src={process.env.PUBLIC_URL + "/images/stack.png"} alt="JS, CSS, HTML" width="70" height="25"/>
                                             <span className="btn-group float-right">
                                 

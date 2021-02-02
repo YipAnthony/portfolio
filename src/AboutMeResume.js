@@ -27,7 +27,7 @@ export default function AboutMeResume() {
                             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div className="accordion-body">
                                     <div className="embed-responsive embed-responsive-4by3 resumePDFFormat">
-                                            <iframe width="100%" height="auto" className="embed-responsive-item resumePDFFormat" title="MedicalResume" src={process.env.PUBLIC_URL + "/images/AnthonyYipResume.pdf"}></iframe>
+                                            <iframe width="100%" height="auto" className="embed-responsive-item resumePDFFormat" title="MedicalResume" src={process.env.PUBLIC_URL + "/images/AnthonyYipResume.2.2.20.pdf"}></iframe>
                                     </div>
                                 </div>
                             </div>
