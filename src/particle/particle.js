@@ -265,8 +265,10 @@ export default function particleAnimation (canvas, group) {
                 }
             }
         }
+        if (window.innerWidth > 1000) {
+            window.addEventListener('resize', ()=> {
+                window.location.reload()
+            })
 
-       window.addEventListener('resize', ()=> {
-           window.location.reload()
-       })
+        }
 }

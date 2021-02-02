@@ -3,6 +3,12 @@
     margin: auto;
 }
 
+.resumeDownload {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
 .resumePDFFormat {
     width: 100%;
     height: 50vw;
