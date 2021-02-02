@@ -16,7 +16,11 @@ export default function particleAnimation (canvas, group) {
         if (window.innerWidth > 1600) {
             canvas.height = 0.45* window.innerWidth;
         } else if (window.innerWidth > 1500) {
-            canvas.height = 0.55* window.innerWidth;
+            canvas.height = 0.65* window.innerWidth;
+        } else if (window.innerWidth <550) {
+            canvas.height = 1 * window.innerWidth;
+        } else if (window.innerWidth <700) {
+            canvas.height = 0.9* window.innerWidth;
         }
         if (group === "title") { 
             canvas.height = 0.2* window.innerWidth;
@@ -26,9 +30,11 @@ export default function particleAnimation (canvas, group) {
                 canvas.height = 0.13 * window.innerWidth
             } else if (window.innerWidth > 1200) {
                 canvas.height = 0.15 * window.innerWidth
+            } else if (window.innerWidth <= 700) {
+                canvas.height = 0.22 * window.innerWidth
             } else if (window.innerWidth <= 1200) {
                 canvas.height = 0.18 * window.innerWidth
-            }
+            } 
         }
         let onCanvas = false
         if (group === "title") {
@@ -39,6 +45,35 @@ export default function particleAnimation (canvas, group) {
             mouse.y = event.y + window.pageYOffset - canvas.offsetTop;
             onCanvas = true
         })
+        canvas.addEventListener('touchmove', process_touchmove, false);
+        function process_touchmove(ev) {
+            // Set call preventDefault()
+            ev.preventDefault();
+        }
+        canvas.addEventListener('pointerdown', (event) => {
+            event.preventDefault();
+            mouse.x = event.x + window.pageXOffset - canvas.offsetLeft;
+            mouse.y = event.y + window.pageYOffset - canvas.offsetTop;
+            onCanvas = true
+        });
+        canvas.addEventListener('pointermove', (event) => {
+            
+            mouse.x = event.x + window.pageXOffset - canvas.offsetLeft;
+            mouse.y = event.y + window.pageYOffset - canvas.offsetTop;
+            onCanvas = true
+        });
+        
+        canvas.addEventListener('touchend', () => {
+            mouse.x = 0;
+            mouse.y = 0;
+            onCanvas = false;
+        })
+        canvas.addEventListener('mouseup', () => {
+            mouse.x = 0;
+            mouse.y = 0;
+            onCanvas = false;
+        })
+       
         canvas.addEventListener('mouseout', (event) => {
             mouse.x = 0;
             mouse.y = 0;
@@ -47,6 +82,10 @@ export default function particleAnimation (canvas, group) {
 
         let ctx = canvas.getContext('2d')
         let multiplier = 1;
+        let particleConnectionThickness = 1;
+        if (window.innerWidth < 550) {
+            particleConnectionThickness = 0.6
+        }
         if (window.innerWidth < 400) {
             multiplier = 3;
         } else if (window.innerWidth < 500) {
@@ -62,7 +101,11 @@ export default function particleAnimation (canvas, group) {
             canvas.width = window.innerWidth * .65
         } else if (window.innerWidth > 1200) {
             canvas.width = window.innerWidth * .7
-        } else if (window.innerWidth <= 1200) {
+        } else if (window.innerWidth <= 550) {
+            canvas.width = window.innerWidth 
+        } else if (window.innerWidth <= 700) {
+            canvas.width = window.innerWidth 
+        }  else if (window.innerWidth <= 1200) {
             canvas.width = window.innerWidth * .7
         } 
         
@@ -212,10 +255,8 @@ export default function particleAnimation (canvas, group) {
                     let dx = particleArray[a].x - particleArray[b].x;
                     let dy = particleArray[a].y - particleArray[b].y;
                     let distance = Math.sqrt(dx * dx + dy * dy)
-
-                    if (distance < multiplier *  1.3/100 * 0.7 *  canvas.width ) {
+                    if (distance < multiplier *  1.3/100 * 0.7 * particleConnectionThickness * canvas.width ) {
                         ctx.strokeStyle = "white";
-                        ctx.liineWidth = 2;
                         ctx.beginPath();
                         ctx.moveTo(particleArray[a].x, particleArray[a].y);
                         ctx.lineTo(particleArray[b].x, particleArray[b].y)

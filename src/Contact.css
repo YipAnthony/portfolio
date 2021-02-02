@@ -6,6 +6,10 @@
     margin: 10px;
 }
 
+.contactContainer svg:hover {
+
+}
+
 .emailContainer {
     display: flex;
     width: 100%;
@@ -23,6 +27,8 @@
 
 .githubIcon:hover, .linkedInIcon:hover {
     cursor: pointer !important;
+    transform: scale(1.1);
+    transition-duration: .2s;
 }
 
 .alert {

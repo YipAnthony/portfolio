@@ -65,6 +65,10 @@ code {
   grid-column: 1/2;
 }
 
+.linkSelection svg {
+  margin: auto 5px;
+}
+
 .navSelections a, .navSelections:visited  {
   /* color: white; */
   font-size: 20px;
@@ -140,3 +144,6 @@ code {
   color: #356efd
 }
 
+.footerText {
+  color: #6c757d;
+}

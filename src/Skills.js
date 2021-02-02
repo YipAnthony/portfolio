@@ -22,7 +22,7 @@ export default function Skills() {
 
     return (
         <>
-            <div id="skillsContainer display-3 font-weight-normal">
+            <div id="skillsContainer" className="skillsContainer display-3 font-weight-normal">
 
                 <div id="canvasContainer" className="canvasContainer" >
                     <canvas id="canvasTitle" ref={canvasTitleRef}></canvas>

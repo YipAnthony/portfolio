@@ -26,3 +26,9 @@
 .accordion-button:focus {
     border-color: #e7f1ff46 !important;
 }
+
+@media (max-width: 550px) {
+    .resumeContainer {
+        width: 95%;
+    }
+}
