@@ -6,8 +6,8 @@
     margin: 10px;
 }
 
-.contactContainer svg:hover {
-
+.alert-primary {
+    text-align: center;
 }
 
 .emailContainer {
