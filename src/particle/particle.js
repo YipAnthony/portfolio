@@ -131,12 +131,14 @@ export default function particleAnimation (canvas, group) {
             ctx.fillText('Javascript', multiplier *0.075 * canvas.width, multiplier *0.065 * canvas.width)
             ctx.fillText('CSS',multiplier * 0.145 * canvas.width,multiplier * 0.065 * canvas.width)
     
-            ctx.fillText('ReactJS',multiplier * 0.03 * canvas.width,multiplier * 0.08 * canvas.width)
-            ctx.fillText('Bootstrap',multiplier * 0.09 * canvas.width,multiplier * 0.08 * canvas.width)
+            ctx.fillText('React.js',multiplier * 0.03 * canvas.width,multiplier * 0.08 * canvas.width)
+            ctx.fillText('React Native',multiplier * 0.09 * canvas.width,multiplier * 0.08 * canvas.width)
     
-            ctx.fillText('MaterialUI', multiplier *0.03 * canvas.width, multiplier *0.095 * canvas.width)
+            ctx.fillText('Bootstrap', multiplier *0.03 * canvas.width, multiplier *0.095 * canvas.width)
+            ctx.fillText('MaterialUI', multiplier *0.1 * canvas.width, multiplier *0.095 * canvas.width)
             
             
+            ctx.fillText('Golang',multiplier * 0.06 * canvas.width,multiplier * 0.14 * canvas.width)
             ctx.fillText('NodeJS',multiplier * 0.11 * canvas.width,multiplier * 0.14 * canvas.width)
             ctx.fillText('Express',multiplier * 0.168 * canvas.width, multiplier *0.14 * canvas.width)
     
