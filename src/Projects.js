@@ -139,7 +139,7 @@ export default function Projects() {
                                     {/* <img id="cardCoverImage" className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/todo5.png"} alt="Restaurant project animation"/> */}
                                     <img className="bd-placeholder-img card-img-top"  src={process.env.PUBLIC_URL + "/images/todo.gif"} alt="To-do list project animation"/>
                                     <div className="card-body">
-                                        <p className="card-text lead"><strong>To-do List</strong>
+                                        <p className="card-text lead"><strong>Task Tracker</strong>
                                         
                                         </p>
                                         <p className="card-text">Allows users to create tasks with due date, details, and grouping by projects. Side panel filters by daily/weekly tasks and project categories. Integrates user sign-up, authentication, and Firestore database.</p>

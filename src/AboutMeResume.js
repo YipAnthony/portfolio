@@ -10,7 +10,7 @@ export default function AboutMeResume() {
         <div className="resumeContainer">
             {isMobile ? 
                 <div className="resumeButtonContainer">
-                    <a className="resumeDownload"  href={process.env.PUBLIC_URL + "/images/AnthonyYipResume.pdf"} download>
+                    <a className="resumeDownload"  href={process.env.PUBLIC_URL + "/images/AnthonyYipResume.3.10.2021.pdf"} download>
                         <button className="btn btn-secondary">Resume</button>
                     </a>
 
@@ -27,7 +27,7 @@ export default function AboutMeResume() {
                             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                 <div className="accordion-body">
                                     <div className="embed-responsive embed-responsive-4by3 resumePDFFormat">
-                                            <iframe width="100%" height="auto" className="embed-responsive-item resumePDFFormat" title="MedicalResume" src={process.env.PUBLIC_URL + "/images/AnthonyYipResume.2.2.20.pdf"}></iframe>
+                                            <iframe width="100%" height="auto" className="embed-responsive-item resumePDFFormat" title="MedicalResume" src={process.env.PUBLIC_URL + "/images/AnthonyYipResume.3.10.2021.pdf"}></iframe>
                                     </div>
                                 </div>
                             </div>
